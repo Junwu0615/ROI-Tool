@@ -1,5 +1,7 @@
-![](https://views.whatilearened.today/views/github/Junwu0615/ROI-Tool.svg)
-[![](https://img.shields.io/badge/Language-Python-blue.svg?style=plastic)](https://www.python.org/) </br>
+<a href='https://github.com/Junwu0615/ROI-Tool'><img alt='GitHub Views' src='https://views.whatilearened.today/views/github/Junwu0615/ROI-Tool.svg'> 
+<a href='https://github.com/Junwu0615/ROI-Tool'><img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/Junwu0615/6c605b43f1b9dcb93f9c7b6c1a5103ab/raw/ROI-Tool_clone.json&logo=github'> </br>
+[![](https://img.shields.io/badge/Language-Python-blue.svg?style=plastic)](https://www.python.org/) 
+[![](https://img.shields.io/badge/Project-ROI-blue.svg?style=plastic)](https://github.com/Junwu0615/ROI-Tool) </br>
 [![](https://img.shields.io/badge/Package-Pandas-green.svg?style=plastic)](https://pypi.org/project/pandas/) 
 [![](https://img.shields.io/badge/Package-Matplotlib-green.svg?style=plastic)](https://pypi.org/project/matplotlib/) 
 [![](https://img.shields.io/badge/Package-ArgumentParser-green.svg?style=plastic)](https://pypi.org/project/argumentparser/) 
