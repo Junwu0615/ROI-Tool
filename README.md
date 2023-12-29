@@ -9,7 +9,7 @@
 ## STEP.1　CLONE
 
 ```code
-git clone git@github.com:Junwu0615/ROI-tool.git
+git clone git@github.com:Junwu0615/ROI-Tool.git
 ```
 
 ## STEP.2　RUN 
@@ -36,12 +36,12 @@ python ROI.py -h
 
 
 ## STEP.4　EXAMPLE
-`-w`預計想要工作30年　|　`-y`今年26歲　|　`-d`活到90歲　|　<br/>
-`-e`每月能投入10K資金 |　`-r`ROI : 15%　|　`-o`預期想達成3E　|　`-m`一次性金額有300K
+`-w` 預計想要工作30年　|　`-y` 今年26歲　|　`-d` 活到90歲　|　<br/>
+`-e` 每月能投入10K資金 |　`-r` ROI : 15%　|　`-o` 預期想達成3E　|　`-m` 一次性金額有300K
 ```
 python ROI.py -w 30 -y 26 -d 90 -e 10000 -r 15 -o 300000000 -m 300000
 ```
- - 執行完畢後會在 `/result` 生成 `3`個輸出檔。
+ - 執行完畢後會在 `/result` 生成 `3` 個輸出檔。
    - ROI_result.txt
    - 工作年-每年定存再投入之總資金成長走勢.png
    - ![工作年-每年定存再投入之總資金成長走勢](result/工作年-每年定存再投入之總資金成長走勢.png)
