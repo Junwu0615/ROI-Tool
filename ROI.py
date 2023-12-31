@@ -64,7 +64,7 @@ def png(year_type, value_1, value_2, value_3):
         plt.plot(df_2[year_type], df_2[value_2])
         plt.legend([value_1, value_2], loc="upper left", prop = font)
     plt.title(value_3, fontproperties = font)
-    plt.savefig("result/"+ value_3 + ".png")
+    plt.savefig("results/"+ value_3 + ".png")
     plt.clf()
     
 
@@ -83,23 +83,32 @@ def parse_args():
 
 if __name__ == '__main__':
     args = parse_args()
-    work_year = args.work_year  #只想要工作多久
-    year = args.year  #年齡
-    dead = args.dead  #想活到幾歲
-    money_month = args.money_month  #每月能投入股市資金
+    work_year = args.work_year  #預計工作x年
+    year = args.year  #今年年齡
+    dead = args.dead  #預期活到x歲
+    money_month = args.money_month  #每月能投入x資金
     ROI = args.ROI  #投資報酬率
-    object_num = args.object_num  #預期想要達成金額
+    object_num = args.object_num  #預期想達成金額
     money_once = args.money_once  #一次性金額，如沒填0
     money_year = money_month * 12  #每年要投入股市資金
     break_life = dead - (year + work_year)  #退休還能活幾年
     
-    print("START: 開始做ROI計算...")
+    print("START: ROI calculation...\n")
+    print("The information you enter is as follows :")
+    print("- Expected to work for {} years.\n- {} years old this year.\n- Expected to live to {} years old.\n- Can invest {}K funds every month.\n- Estimated ROI: {}%.\n- Expect to achieve {}E.\n- The one-time amount is {}K.\n- Invest {}K in the stock market every year.\n- You can live for {} years after retirement.".format(work_year, 
+                                                                                                                                                                                                                                                                                                                             year, dead, 
+                                                                                                                                                                                                                                                                                                                             int(money_month/1000), 
+                                                                                                                                                                                                                                                                                                                             ROI, 
+                                                                                                                                                                                                                                                                                                                             int(object_num/100000000), 
+                                                                                                                                                                                                                                                                                                                             int(money_once/1000), 
+                                                                                                                                                                                                                                                                                                                             int(money_year/1000), 
+                                                                                                                                                                                                                                                                                                                             break_life))
     #控制權限轉移
     back_power = sys.stdout
     isExists_file = os.path.exists('./result')
     if not isExists_file:
-        os.makedirs('./result') 
-    sys.stdout = open('result/ROI_result.txt', 'w', encoding = "utf-8")
+        os.makedirs('./results') 
+    sys.stdout = open('results/ROI_result.txt', 'w', encoding = "utf-8")
 
     print("======================================")
     print("複利效應是你的好朋友")
@@ -248,5 +257,5 @@ if __name__ == '__main__':
     sys.stdout.close()
     #控制權限返回
     sys.stdout = back_power
-    print("END: 結束編輯並輸出完成 !")
+    print("\nEND: Output is complete !\nThe file is stored in the path (./results/), which contains txt*1 / png*2.")
     
