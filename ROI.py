@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 from argparse import ArgumentParser
 from matplotlib.font_manager import FontProperties
 
-
 def strofsize(num, level):
     if level >= 2:
         return num, level
@@ -16,7 +15,6 @@ def strofsize(num, level):
     else:
         return num, level
 
-
 def change(num):
     units = ['', '萬', '億']
     num, level = strofsize(num, 0)
@@ -24,16 +22,13 @@ def change(num):
         level -= 1
     return '{}{}'.format(round(num, 2), units[level])
 
-
 def Interest(now_year):
     interest = now_year * (ROI * 0.01)  #報酬
     return interest
 
-
 def Now_year_ROI(now_year):
     now_year_ROI = now_year + Interest(now_year)  #今年投資金+ROI
     return now_year_ROI
-
 
 def png(year_type, value_1, value_2, value_3):
     font = FontProperties(fname = r".\\msjh.ttc", size = 12)
@@ -67,19 +62,17 @@ def png(year_type, value_1, value_2, value_3):
     plt.savefig("results/"+ value_3 + ".png")
     plt.clf()
     
-
 def parse_args():
     parse = ArgumentParser()
-    parse.add_argument("-w", "--work_year", help = "work year", default = "default", type = int)
-    parse.add_argument("-y", "--year", help = "year", default = "default", type = int)
-    parse.add_argument("-d", "--dead", help = "dead", default = "default", type = int)
-    parse.add_argument("-e", "--money_month", help = "money month", default = "default", type = int)
-    parse.add_argument("-r", "--ROI", help = "ROI", default = "default", type = int)
-    parse.add_argument("-o", "--object_num", help = "object number", default = "default", type = int)
-    parse.add_argument("-m", "--money_once", help = "money once", default = "default", type = int)
+    parse.add_argument("-w", "--work_year", help = "How many years do you expect to work?", default = 30, type = int)
+    parse.add_argument("-y", "--year", help = "How old are you this year?", default = 26, type = int)
+    parse.add_argument("-d", "--dead", help = "How old do you want to live?", default = 90, type = int)
+    parse.add_argument("-e", "--money_month", help = "How much money can be invested in the stock market every month?", default = 10000, type = int)
+    parse.add_argument("-r", "--ROI", help = "Return On Investment, ROI", default = 15, type = int)
+    parse.add_argument("-o", "--object_num", help = "How much do you expect to achieve?", default = 300000000, type = int)
+    parse.add_argument("-m", "--money_once", help = "Do you have a one-time amount? If so, fill in the number. Otherwise, fill in 0.", default = 300000, type = int)
     args = parse.parse_args() #解析參數對象 獲得解析對象
     return args
-
 
 if __name__ == '__main__':
     args = parse_args()
@@ -258,4 +251,3 @@ if __name__ == '__main__':
     #控制權限返回
     sys.stdout = back_power
     print("\nEND: Output is complete !\nThe file is stored in the path (./results/), which contains txt*1 / png*2.")
-    
