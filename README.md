@@ -7,17 +7,17 @@
 [![](https://img.shields.io/badge/Package-ArgumentParser_1.2.1-green.svg?style=plastic)](https://pypi.org/project/argumentparser/) 
 
 ## STEP.1　CLONE
-```ruby
+```python
 git clone git@github.com:Junwu0615/ROI-Tool.git
 ```
 
 ## STEP.2　INSTALL PACKAGES
-```ruby
+```python
 pip install -r requirements.txt
 ```
 
 ## STEP.3　RUN 
-```ruby
+```python
 python ROI.py -h
 ```
 
@@ -35,7 +35,7 @@ python ROI.py -h
 ## STEP.5　EXAMPLE
 `-w` 預計想要工作30年　|　`-y` 今年26歲　|　`-d` 活到90歲　|　<br/>
 `-e` 每月能投入10K資金 |　`-r` ROI : 15%　|　`-o` 預期想達成3E　|　`-m` 一次性金額有300K
-```ruby
+```python
 python ROI.py -w 30 -y 26 -d 90 -e 10000 -r 15 -o 300000000 -m 300000
 ```
 ![範例動圖](sample.gif)
