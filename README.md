@@ -18,7 +18,7 @@ pip install -r requirements.txt
 
 ## STEP.3　RUN 
 ```py
-python ROI.py -h
+python Entry.py -h
 ```
 
 ## STEP.4　HELP
@@ -36,12 +36,12 @@ python ROI.py -h
 `-w` 預計想要工作 30 年　|　`-y` 今年 26 歲　|　`-d` 活到 90 歲　|　<br/>
 `-e` 每月能投入 10K 資金 |　`-r` ROI : 15 %　|　`-o` 預期想達成 3E　|　`-m` 一次性金額有 300K
 ```py
-python ROI.py -w 30 -y 26 -d 90 -e 10000 -r 15 -o 300000000 -m 300000
+python Entry.py -w 30 -y 26 -d 90 -e 10000 -r 15 -o 300000000 -m 300000
 ```
-![範例動圖](sample.gif)
-- 執行完畢後會在 `/results/` 生成 `3` 個輸出檔。
+![範例動圖](./Sample/sample.gif)
+- 執行完畢後會在 `/Results/` 生成 `3` 個輸出檔。
   - ROI_result.txt
   - 工作年-每年定存再投入之總資金成長走勢.png
-  - <img  height=330 width=460 src="https://github.com/Junwu0615/ROI-Tool/blob/main/results/%E5%B7%A5%E4%BD%9C%E5%B9%B4-%E6%AF%8F%E5%B9%B4%E5%AE%9A%E5%AD%98%E5%86%8D%E6%8A%95%E5%85%A5%E4%B9%8B%E7%B8%BD%E8%B3%87%E9%87%91%E6%88%90%E9%95%B7%E8%B5%B0%E5%8B%A2.png"/>
+  - <img  height=330 width=460 src="https://github.com/Junwu0615/ROI-Tool/blob/main/Results/%E5%B7%A5%E4%BD%9C%E5%B9%B4-%E6%AF%8F%E5%B9%B4%E5%AE%9A%E5%AD%98%E5%86%8D%E6%8A%95%E5%85%A5%E4%B9%8B%E7%B8%BD%E8%B3%87%E9%87%91%E6%88%90%E9%95%B7%E8%B5%B0%E5%8B%A2.png"/>
   - 退休年-每年退休後之被動收入&提領出來之成長走勢.png
-  - <img  height=330 width=460 src="https://github.com/Junwu0615/ROI-Tool/blob/main/results/%E9%80%80%E4%BC%91%E5%B9%B4-%E6%AF%8F%E5%B9%B4%E9%80%80%E4%BC%91%E5%BE%8C%E4%B9%8B%E8%A2%AB%E5%8B%95%E6%94%B6%E5%85%A5%26%E6%8F%90%E9%A0%98%E5%87%BA%E4%BE%86%E4%B9%8B%E6%88%90%E9%95%B7%E8%B5%B0%E5%8B%A2.png"/>
+  - <img  height=330 width=460 src="https://github.com/Junwu0615/ROI-Tool/blob/main/Results/%E9%80%80%E4%BC%91%E5%B9%B4-%E6%AF%8F%E5%B9%B4%E9%80%80%E4%BC%91%E5%BE%8C%E4%B9%8B%E8%A2%AB%E5%8B%95%E6%94%B6%E5%85%A5%26%E6%8F%90%E9%A0%98%E5%87%BA%E4%BE%86%E4%B9%8B%E6%88%90%E9%95%B7%E8%B5%B0%E5%8B%A2.png"/>
