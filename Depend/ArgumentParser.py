@@ -10,7 +10,7 @@ class AP:
     def __init__(self, obj):
         self.obj = obj
 
-    def parse_args(self) -> ArgumentParser:
+    def parse_args(self) -> Namespace:
         parse = ArgumentParser()
         parse.add_argument("-w", "--work_year",
                            help="How many years do you expect to work?",
@@ -34,8 +34,7 @@ class AP:
                            help="Do you have a one-time amount? If so, fill in the number. Otherwise, fill in 0.",
                            default=300000, type=int)
 
-        args: Namespace = parse.parse_args()
-        return args
+        return parse.parse_args()
 
     def config_once(self):
         args = self.parse_args()

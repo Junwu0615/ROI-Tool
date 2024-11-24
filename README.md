@@ -18,7 +18,7 @@ pip install -r requirements.txt
 
 ## STEP.3　RUN 
 ```py
-python ROI.py -h
+python Entry.py -h
 ```
 
 ## STEP.4　HELP
@@ -36,9 +36,9 @@ python ROI.py -h
 `-w` 預計想要工作 30 年　|　`-y` 今年 26 歲　|　`-d` 活到 90 歲　|　<br/>
 `-e` 每月能投入 10K 資金 |　`-r` ROI : 15 %　|　`-o` 預期想達成 3E　|　`-m` 一次性金額有 300K
 ```py
-python ROI.py -w 30 -y 26 -d 90 -e 10000 -r 15 -o 300000000 -m 300000
+python Entry.py -w 30 -y 26 -d 90 -e 10000 -r 15 -o 300000000 -m 300000
 ```
-![範例動圖](sample.gif)
+![範例動圖](./Sample/sample.gif)
 - 執行完畢後會在 `/Results/` 生成 `3` 個輸出檔。
   - ROI_result.txt
   - 工作年-每年定存再投入之總資金成長走勢.png
