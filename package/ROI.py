@@ -13,7 +13,7 @@ class ROI:
     def __init__(self, obj):
         self.obj = obj
         self.console = Console()
-        self.file_path = './Results'
+        self.file_path = './sample'
         self.font = 'C:/Windows/Fonts/msjhbd.ttc'
         # self.font = ''
         self.data = [[], [], [], [], []]
